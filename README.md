@@ -37,7 +37,7 @@ Abaixo as tecnologias utilizadas para construção da aplicação
 
 ## Licença
 
-Distribuído sob a licença MIT. Veja [LICENSE](LICENSE) para mais informações.
+Distribuído sob a licença MIT. Veja [LICENSE](https://github.com/MoraisRafa/ignews/blob/d1884350aac12de8fdd73295a408ce6eeb12689c/LICENSE.md) para mais informações.
 
 ## Autor
 
