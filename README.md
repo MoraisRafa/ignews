@@ -1,13 +1,11 @@
 ![ignews](https://user-images.githubusercontent.com/84815826/172717528-22351c49-2add-468f-a00f-a1d0d527153b.png)
 <h1 align="center"> ig.news </h1>
-
-<h2 align="center"> 
-	🚧   Em construção...  🚧
-</h2>
-
+<br><br>
 <p align="center">
  <a href="#sobre-o-projeto">Sobre o Projeto</a> •
  <a href="#tecnologias">Tecnologias</a> •
+ <a href="#imagens">Imagens</a> •
+ <a href="#requisitos">Requisitos</a> •
  <a href="#licença">Licença</a> •
  <a href="#autor">Autor</a>
 </p>
@@ -34,6 +32,58 @@ Abaixo as tecnologias utilizadas para construção da aplicação
 - [Stripe](https://stripe.com/)
 - [FaunaDB](https://fauna.com/)
 - [Prismic CMS](https://prismic.io/)
+
+## Imagens
+
+<h1 align="center">
+    <img alt = "app" src = "./imagens/print1.png" width = "600px" />
+    <img alt = "Wapp" src = "./imagens/print2.png" width = "600px" />
+    <img alt = "app" src = "./imagens/print3.png" width = "600px" />
+</h1>
+
+## Requisitos
+
+Necessário realizar as instalações:
+
+- [Git](https://git-scm.com/)
+- [Yarn](https://classic.yarnpkg.com)
+- [Stripe CLI](https://stripe.com/docs/stripe-cli)
+
+Criar conta e configurar os serviços externos:
+
+- [Stripe](https://stripe.com/)
+- [FaunaDB](https://fauna.com/)
+- [Prismic CMS](https://prismic.io/)
+
+*Serão necessárias configurações nos serviços*
+
+### **Clone do projeto**
+
+```bash
+# Execute o comando git clone para realizar o clone do repositório
+$ git clone https://github.com/MoraisRafa/ignews.git
+# Entre na pasta do repositório clonado
+$ cd ignews
+```
+
+### **Iniciando o projeto**
+
+```bash
+# Execute yarn para instalar as dependências
+$ yarn
+
+# Na raiz do projeto crie uma copia do arquivo .env.local.example
+# Altere o nome da copia para .env.local
+# Preencha as variáveis ambiente de acordo com as instruções
+$ cp .env.local.example .env.local
+
+# Execute stripe listen para ouvir eventos do webhook
+$ stripe listen --forward-to localhost:3000/api/webhooks 
+
+# Para iniciar a aplicação
+$ yarn dev
+
+```
 
 ## Licença
 
